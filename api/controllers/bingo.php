@@ -4,6 +4,7 @@ header('Content-Type: application/json');
 
 if ($_REQUEST['action'] === 'index') {
   echo json_encode(Uploads::all());
+
 }
 else if ($_REQUEST['action'] === 'post') {
   $request_body = file_get_contents('php://input');

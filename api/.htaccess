@@ -5,16 +5,16 @@ Header always set Access-Control-Allow-Headers "Content-Type"
 RewriteEngine On
 
 RewriteCond %{REQUEST_METHOD} ^GET$
-RewriteRule ^dog-bingo$ controllers/dog-bingo.php?action=index
+RewriteRule ^dog$ controllers/bingo.php?action=index
 
 RewriteCond %{REQUEST_METHOD} ^GET$
-RewriteRule ^dog-bingo/([0-9]+)$ controllers/dog-bingo.php?action=show&id=$1
+RewriteRule ^dog/([0-9]+)$ controllers/bingo.php?action=show&id=$1
 
 RewriteCond %{REQUEST_METHOD} ^POST$
-RewriteRule ^dog-bingo$ controllers/dog-bongo.php?action=post
+RewriteRule ^dog$ controllers/bingo.php?action=post
 
 RewriteCond %{REQUEST_METHOD} ^PUT$
-RewriteRule ^dog-bingo/([0-9]+)$ controllers/dog-bingo.php?action=update&id=$1
+RewriteRule ^dog/([0-9]+)$ controllers/bingo.php?action=update&id=$1
 
 RewriteCond %{REQUEST_METHOD} ^DELETE$
-RewriteRule ^dog-bingo/([0-9]+)$ controllers/dog-bingo.php?action=delete&id=$1
+RewriteRule ^dog/([0-9]+)$ controllers/bingo.php?action=delete&id=$1
