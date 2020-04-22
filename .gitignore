@@ -1,0 +1,5 @@
+/vendor/
+
+CREATE TABLE dogUpload (id serial, breed VARCHAR(50), image VARCHAR(150), location VARCHAR(150));
+
+INSERT INTO dogUpload (breed, image, location) VALUES ('American Pit Bull', 'https://i.imgur.com/MHU9Sry.jpg', 'King Farm Dog Park');
