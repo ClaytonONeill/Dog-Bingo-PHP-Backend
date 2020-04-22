@@ -36,7 +36,7 @@ class DogUploads {
   static function all() {
     $uploads = array();
 
-    $results = pg_query("SELECT * FROM dogUpload");
+    $results = pg_query("SELECT * FROM dogupload");
 
     $row_object = pg_fetch_object($results);
     while($row_object){
